@@ -21,7 +21,7 @@ module.exports = function(content) {
 
 		var modulePath = loaderUtils.urlToRequest(path.join(publicPath, url));
 	} else {
-		var modulePath = this.resourcePath;
+		var modulePath = path.relative(this.options.output.path, this.resourcePath);
 	}
 
 	this.options.externals.push(modulePath);
