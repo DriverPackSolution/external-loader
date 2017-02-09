@@ -24,6 +24,9 @@ module.exports = function(content) {
 		var modulePath = path.relative(this.options.output.path, this.resourcePath);
 	}
 
+	if (this.options.externals == undefined){
+		this.options.externals = [];
+	}
 	this.options.externals.push(modulePath);
 
 	if (!query.type) {
