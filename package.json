@@ -1,5 +1,5 @@
 {
-  "name": "external-loader",
+  "name": "@drp/external-loader",
   "version": "0.2.0",
   "author": {
     "name": "Adam Stankiewicz <sheerun@sher.pl>"
